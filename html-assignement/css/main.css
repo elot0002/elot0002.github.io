@@ -24,7 +24,7 @@ list-style-type: none;
 }
 nav a {
     background-color: wheat; 
-    border-style: 2px; 
+    border: 2px solid; 
     border-color: black;
 }
 nav a:hover {
