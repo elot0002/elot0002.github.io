@@ -1,0 +1,170 @@
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #aad4cf;
+  color: #333;
+  /* Removes default margin */
+  margin: 0;
+  /* Removes default padding */
+  padding: 0;
+}
+
+/* Container for centering content */
+.container {
+  /* Sets the width to 80% of the viewport */
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #e0f7fa;
+}
+
+/* Header styles */
+header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Header image styles */
+header img {
+  /* Sets image width to 100% of its container */
+  width: 100%;
+  /* Sets image height to 300px */
+  height: 300px;
+  padding: 0;
+}
+
+/* Centering the header title over the image */
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Adds padding around the title */
+  padding: 10px;
+}
+
+/* Navigation menu styles */
+nav ul {
+  /* Removes default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  /* Centers the navigation items horizontally */
+  justify-content: center;
+}
+
+/* Navigation list item styles */
+nav ul li {
+  /* Displays list items inline */
+  display: inline-block;
+  margin: 0 100px;
+  position: relative;
+}
+
+/* Adding a vertical line between nav items */
+nav ul li::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  width: 1px;
+  background-color: #333;
+  height: 30px;
+}
+
+/* Removing the line before the first nav item */
+nav ul li:first-child::before {
+  content: "";
+  display: none;
+}
+
+/* Navigation link styles */
+nav ul li a {
+  /* Removes underline from links */
+  text-decoration: none;
+  color: #333;
+  /* Adds padding around the links */
+  padding: 10px 15px;
+  display: inline-block;
+}
+article {
+  padding: 20px;
+}
+
+/* Styles for the left-aligned image in the article */
+article img.left {
+  /* Floats the image to the left */
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  /* Sets the image width */
+  width: 200px;
+  height: auto;
+}
+
+/* Section padding and margin */
+section {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Contact form section styles */
+.contact {
+  padding: 20px;
+  /* Adds a black border */
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Form input and textarea styles */
+form input,
+form textarea {
+  /* Sets the width to 95% of the container */
+  width: 95%;
+  /* Adds padding */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Radio button group styles */
+.radio-group {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+/* Styles for the radio button labels */
+.radio-group label {
+  /* Removes margin */
+  margin: 0;
+  padding: 10;
+}
+
+/* Submit button styles */
+button[type="submit"] {
+  display: block;
+  /* Adds top margin */
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: black;
+  /* Rounds the corners */
+  border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+  text-align: right;
+  padding: 20px;
+  /* Adds top margin */
+  margin-top: 20px;
+}
